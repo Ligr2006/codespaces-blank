@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-      <meta charset="UTF-8"
+      <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"
       <title>Pedido não oficial de MADRINHA</title>
       <style>
          body {
             background-color:#ffcccc;
             text-align: center;
-            font-family:Arial, sans-serif;
+            font-family: Arial, sans-serif;
     }
 
     .container {
@@ -29,7 +29,7 @@
       font-size: 24px;
       color: #333
       background-color #ffcccc;
-      border:none;
+      border: none;
       cursor: pointer;
       position: absolute;
     }
@@ -43,20 +43,20 @@
     <p> Aceita ser minha MADRINHA?</p> 
     <p class="heart" oneclick="mostrarResposta()">♥</p>
     <button id="não" onmouseover="mudarPosicao()">Não</button>
-    <p id="resposta" style="display:none;"></p>
+    <p id="resposta" style="display: none;"></p>
    </div>
    <script>
-    function mostrarResposta(){
+    function mostrarResposta() {
         document.getElementById('resposta').style.display = 'block';
         document.getElementById('resposta').innerHTML = 'Sim!Eu aceito!';
     }
 
-    function mudarPosicao(){
+    function mudarPosicao() {
         const buttonNao = document.getElementById('nao');
         const randomX = Math.floor(Math.random()* window.innerWidth)
         const randomY = Math.floor(Math.random()* window.innerHeight)
-        buttonNao.style.left= '${randomX}px';
-        buttonNao.style.top= '${randomY}px';
+        buttonNao.style.left = `${randomX}px` ;
+        buttonNao.style.top = `${randomY}px` ;
     }   
   </script>
 </body>
